@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{%  extends 'VideoApp/base.html' %}
+{% load my_custom_filters %}
+{% block body_block %}
+    <h1>Welcome to index page</h1>
+    <h2>This is an example of Template inheritance</h2>
+<!-- examples of built in template filters -->
+    <h2>{{text|title}}</h2>
+    <h3>{{text|upper}}</<h3>
+    <h3>{{number|add:'35'}}</h3>
+<!-- examples of custom template filters -->
+    <h2>{{text|cutfilter:'me'}}</h2>
+    <h2>{{text|splitfilter}}
+{% endblock %}

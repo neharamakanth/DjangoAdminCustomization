@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Relative URL page</title>
+  </head>
+  <body>
+    <h1>Welcome to Relative Urls template</h1>
+<!--instead of href=VideoApp/other.html" hard coding we use relative url -->
+    <a href="{% url 'VideoApp:other' %}">Go to others page</a>
+    <a href="{% url 'VideoApp:relative' %}">Go to Relative Urls page</a>
+    <a href="{% url 'index' %}">Go to index page</a>
+    <a href="{% url 'admin:index' %}">Go to admin</a>
+  </body>
+</html>
